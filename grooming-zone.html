@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Grooming Zone – Premium Unisex Salon | Mango, Jamshedpur</title>
+<meta name="description" content="The Grooming Zone - Premium Unisex Salon in Mango, Jamshedpur. Expert haircuts, colour, keratin, facials, bridal makeup & more. Book your appointment today!"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Oswald:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ogl/1.0.8/ogl.umd.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --or:#e87c1e;--or2:#f5a336;--or3:#c4620e;
+  --blk:#0b0805;--blk2:#140e08;--blk3:#1c1409;
+  --white:#fff;--muted:#998e80;
+  --border:rgba(232,124,30,.22);--bdr2:rgba(255,255,255,.07);
+  --px:18px;--r:8px;
+  --T:.28s cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--blk);color:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;object-fit:cover}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer}
+input,select,textarea{font-family:inherit}
+::selection{background:var(--or);color:#000}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--blk)}
+::-webkit-scrollbar-thumb{background:var(--or);border-radius:2px}
+body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");opacity:.5}
+
+/* SVG ICON SYSTEM */
+.ico{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.ico svg{width:100%;height:100%;fill:currentColor}
+
+/* WHATSAPP FAB */
+.wa-fab{position:fixed;bottom:22px;right:20px;z-index:8000;width:54px;height:54px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.5);animation:fabIn .5s .8s cubic-bezier(.34,1.56,.64,1) both;transition:transform .2s}
+.wa-fab:hover{transform:scale(1.12) rotate(-5deg)}
+.wa-fab svg{width:28px;height:28px;fill:#fff}
+@keyframes fabIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:700;display:flex;align-items:center;justify-content:space-between;padding:13px var(--px);background:rgba(11,8,5,.9);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);transition:padding var(--T)}
+nav.scrolled{padding:9px var(--px)}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-icon{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--or),var(--or2));display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-logo-icon svg{width:18px;height:18px;fill:#000}
+.nav-logo-text .name{font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;letter-spacing:.05em;line-height:1}
+.nav-logo-text .sub{font-size:9px;color:var(--muted);letter-spacing:.2em;text-transform:uppercase;margin-top:2px}
+.nav-links{display:none;list-style:none;gap:20px;align-items:center}
+.nav-links a{font-family:'Oswald',sans-serif;font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);transition:color var(--T)}
+.nav-links a:hover{color:var(--or)}
+.nav-book{display:none}
+.nav-book-btn{background:linear-gradient(135deg,var(--or),var(--or2));color:#000;border:none;border-radius:3px;padding:9px 18px;font-family:'Oswald',sans-serif;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;transition:opacity .2s,transform .15s}
+.nav-book-btn:hover{opacity:.9;transform:translateY(-1px)}
+.ham{background:none;border:none;display:flex;flex-direction:column;gap:5px;padding:4px;cursor:pointer}
+.ham span{width:22px;height:2px;background:var(--white);border-radius:1px;transition:all .3s}
+.ham.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:690;background:rgba(11,8,5,.98);backdrop-filter:blur(20px);padding:90px var(--px) 40px;flex-direction:column;overflow-y:auto}
+.mob-nav.open{display:flex}
+.mob-nav a{font-family:'Oswald',sans-serif;font-size:24px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--white);padding:15px 0;border-bottom:1px solid var(--border);display:block;transition:color .2s,padding-left .2s}
+.mob-nav a:hover{color:var(--or);padding-left:8px}
+.mob-book{display:block;margin-top:26px;background:linear-gradient(135deg,var(--or),var(--or2));color:#000!important;text-align:center;border-radius:4px;padding:15px;font-size:14px!important;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+
+/* HERO */
+.hero{min-height:100svh;padding-top:62px;position:relative;overflow:hidden;display:flex;flex-direction:column;background:var(--blk)}
+.hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 10% 60%,rgba(232,124,30,.13) 0%,transparent 55%),radial-gradient(ellipse at 85% 20%,rgba(201,151,58,.08) 0%,transparent 50%),linear-gradient(180deg,var(--blk) 0%,var(--blk2) 100%)}
+.hero-lines{position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(-55deg,rgba(232,124,30,.035) 0px,rgba(232,124,30,.035) 1px,transparent 1px,transparent 22px)}
+.hero-content{position:relative;z-index:2;padding:50px var(--px) 34px;display:flex;flex-direction:column}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);border-radius:2px;padding:7px 14px;margin-bottom:24px;width:fit-content;font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--or);background:rgba(232,124,30,.07)}
+.hero-tag .pulse{width:7px;height:7px;border-radius:50%;background:var(--or);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.75)}}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(44px,11vw,88px);font-weight:900;line-height:.92;letter-spacing:-2px;margin-bottom:6px}
+.hero-title em{font-style:italic;color:var(--or)}
+.hero-title .sub-line{display:block;font-family:'Oswald',sans-serif;font-weight:300;font-size:clamp(13px,3.2vw,20px);letter-spacing:.32em;color:var(--muted);font-style:normal;margin-top:8px}
+.hero-desc{font-size:13.5px;line-height:1.85;color:var(--muted);max-width:380px;margin:22px 0 28px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
+.btn-or{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--or),var(--or2));color:#000;border:none;border-radius:3px;padding:14px 26px;font-family:'Oswald',sans-serif;font-size:13px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;box-shadow:0 6px 24px rgba(232,124,30,.38);transition:transform .2s,box-shadow .2s;cursor:pointer}
+.btn-or:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(232,124,30,.52)}
+.btn-or svg{width:14px;height:14px;fill:#000;flex-shrink:0}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--or);border:1.5px solid var(--or);border-radius:3px;padding:13px 24px;font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;transition:background .2s,color .2s;cursor:pointer}
+.btn-ghost:hover{background:var(--or);color:#000}
+.btn-ghost svg{width:14px;height:14px;fill:currentColor;flex-shrink:0}
+.hero-stats{display:flex;gap:22px;flex-wrap:wrap}
+.hstat .n{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:var(--or);line-height:1}
+.hstat .l{font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-top:3px}
+.hstat-div{width:1px;background:var(--border)}
+.hero-img-block{position:relative;flex-shrink:0;width:100%;height:clamp(280px,58vw,400px);overflow:hidden}
+.hero-img-block img{width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:brightness(.88) contrast(1.06) sepia(.1)}
+.hero-img-grad{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(11,8,5,.5) 0%,transparent 35%,rgba(11,8,5,.2) 100%)}
+.hero-img-badge{position:absolute;bottom:16px;left:16px;background:linear-gradient(135deg,var(--or),var(--or2));color:#000;border-radius:3px;padding:9px 15px;font-family:'Oswald',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:6px}
+.hero-img-badge svg{width:12px;height:12px;fill:#000}
+.hero-img-float{position:absolute;top:16px;right:14px;background:rgba(11,8,5,.88);border:1px solid var(--border);border-radius:var(--r);padding:12px 16px;backdrop-filter:blur(12px);animation:floatY 3.5s ease-in-out infinite}
+.hero-img-float .big{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:var(--or);display:block;line-height:1}
+.hero-img-float .sm{font-size:10px;color:var(--muted);margin-top:2px;letter-spacing:.06em}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+
+/* MARQUEE */
+.marquee{background:linear-gradient(135deg,var(--or3),var(--or),var(--or2));padding:12px 0;overflow:hidden;border-top:2px solid var(--or2);border-bottom:2px solid var(--blk)}
+.marquee-track{display:flex;white-space:nowrap;animation:marq 30s linear infinite}
+.marquee-item{flex-shrink:0;padding:0 20px;font-family:'Oswald',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#000;display:inline-flex;align-items:center;gap:12px}
+.marquee-item::after{content:'';display:inline-block;width:4px;height:4px;border-radius:50%;background:#000;opacity:.5}
+@keyframes marq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* SHARED */
+.sec{padding:70px var(--px)}
+.si{max-width:1100px;margin:0 auto}
+.sl{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--or);display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.sl::before{content:'';width:28px;height:1.5px;background:var(--or);flex-shrink:0}
+.sh{font-family:'Playfair Display',serif;font-size:clamp(28px,6vw,50px);font-weight:900;line-height:1.06;letter-spacing:-.4px}
+.or{color:var(--or)}
+.divider{width:52px;height:3px;background:linear-gradient(90deg,var(--or),var(--or2));border-radius:2px;margin:14px 0 26px}
+
+/* ELECTRIC BORDER CARD */
+.eb-wrap{position:relative;border-radius:10px;overflow:visible}
+.eb-canvas{position:absolute;pointer-events:none;z-index:0;top:50%;left:50%;transform:translate(-50%,-50%)}
+.eb-inner{position:relative;z-index:1;border-radius:10px;overflow:hidden}
+
+/* SERVICES */
+.svc-sec{background:var(--blk2)}
+.svc-note{font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:32px;background:rgba(232,124,30,.07);border:1px solid var(--border);border-radius:var(--r);padding:12px 16px;border-left:3px solid var(--or);display:flex;align-items:flex-start;gap:10px}
+.svc-note svg{width:16px;height:16px;fill:var(--or);flex-shrink:0;margin-top:1px}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:14px}
+.svc-card{background:rgba(255,255,255,.03);border:1px solid var(--bdr2);border-radius:10px;padding:22px 20px;display:flex;justify-content:space-between;align-items:flex-start;gap:14px;position:relative;overflow:hidden;transition:border-color var(--T),background var(--T),transform var(--T)}
+.svc-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--or),var(--or2));transform:scaleY(0);transform-origin:bottom;transition:transform var(--T)}
+.svc-card:hover{border-color:var(--border);background:rgba(232,124,30,.06);transform:translateX(5px)}
+.svc-card:hover::before{transform:scaleY(1)}
+.svc-icon-wrap{width:44px;height:44px;border-radius:8px;background:rgba(232,124,30,.1);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:12px;flex-shrink:0}
+.svc-icon-wrap svg{width:22px;height:22px;fill:var(--or)}
+.svc-n{font-family:'Oswald',sans-serif;font-size:15px;font-weight:600;letter-spacing:.04em;margin-bottom:6px}
+.svc-d{font-size:12.5px;color:var(--muted);line-height:1.65}
+.svc-p{text-align:right;flex-shrink:0}
+.svc-p .was{font-size:11px;color:#555;text-decoration:line-through;display:block}
+.svc-p .now{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--or);white-space:nowrap}
+.svc-p .from{font-size:10px;color:var(--muted);display:block;margin-bottom:2px}
+
+/* PACKAGES */
+.pkg-sec{background:var(--blk);position:relative;overflow:hidden}
+.pkg-sec::before{content:'';position:absolute;top:-80px;right:-80px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(232,124,30,.09) 0%,transparent 70%);pointer-events:none}
+.pkg-notice{display:flex;align-items:flex-start;gap:10px;background:rgba(232,124,30,.08);border:1px solid var(--border);border-radius:var(--r);padding:12px 16px;margin-bottom:28px;font-size:12px;color:var(--muted);font-style:italic}
+.pkg-notice svg{width:14px;height:14px;fill:var(--or);flex-shrink:0;margin-top:1px}
+.pkg-tabs{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.ptab{padding:9px 20px;border-radius:3px;border:1px solid var(--border);font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:transparent;cursor:pointer;transition:all .2s}
+.ptab.active,.ptab:hover{background:var(--or);color:#000;border-color:var(--or)}
+.pkg-panel{display:none;grid-template-columns:1fr;gap:12px;position:relative;z-index:1}
+.pkg-panel.show{display:grid}
+
+/* Electric-border package card */
+.pkg-eb{position:relative;border-radius:12px}
+.pkg-eb-canvas{position:absolute;pointer-events:none;z-index:0}
+.pkg-card{background:rgba(20,14,8,.98);border:1px solid var(--bdr2);border-radius:12px;padding:18px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;transition:border-color .25s,background .25s;position:relative;z-index:1;cursor:default}
+.pkg-card:hover{border-color:rgba(232,124,30,.5);background:rgba(232,124,30,.06)}
+.pkg-card.hot{border-color:rgba(232,124,30,.4);background:rgba(232,124,30,.07)}
+.pkg-badge{display:inline-flex;align-items:center;gap:5px;background:linear-gradient(135deg,var(--or),var(--or2));color:#000;font-family:'Oswald',sans-serif;font-size:8px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:3px 10px;border-radius:2px;margin-bottom:8px}
+.pkg-badge svg{width:9px;height:9px;fill:#000}
+.pkg-name{font-family:'Oswald',sans-serif;font-size:14.5px;font-weight:600;color:var(--white);line-height:1.3}
+.pkg-tag{font-size:10.5px;color:var(--muted);margin-top:3px}
+.pkg-pr{text-align:right;flex-shrink:0}
+.pkg-was{font-size:11px;color:#444;text-decoration:line-through;display:block}
+.pkg-now{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--or)}
+.pkg-off{font-size:9px;font-weight:800;color:var(--or2);letter-spacing:.1em;text-transform:uppercase;margin-top:1px}
+
+/* GALLERY - OGL powered */
+.gal-sec{background:var(--blk2)}
+.gal-hd{text-align:center;margin-bottom:28px}
+#ogl-gallery{width:100%;height:340px;border-radius:12px;overflow:hidden;cursor:grab;position:relative;user-select:none}
+#ogl-gallery:active{cursor:grabbing}
+.gal-hint{text-align:center;margin-top:12px;font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:8px}
+.gal-hint svg{width:14px;height:14px;fill:var(--muted)}
+
+/* FALLBACK GALLERY (when WebGL not available) */
+.gal-grid-fallback{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gi{border-radius:var(--r);overflow:hidden;position:relative;background:var(--blk3)}
+.gi img{width:100%;height:100%;object-fit:cover;filter:sepia(.15) contrast(1.04);transition:transform .5s,filter .4s}
+.gi:hover img{transform:scale(1.06);filter:sepia(0)}
+.gi-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(11,8,5,.88));padding:22px 12px 10px;font-family:'Oswald',sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--or);transform:translateY(5px);transition:transform .3s;pointer-events:none}
+.gi:hover .gi-label{transform:translateY(0)}
+.gi.tall{grid-row:span 2}
+.gi.tall img{height:310px}
+.gi:not(.tall) img{height:145px}
+
+/* WHY US */
+.why-sec{background:var(--blk);position:relative;overflow:hidden}
+.why-sec::before{content:'';position:absolute;top:-60px;left:-60px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(232,124,30,.08) 0%,transparent 70%);pointer-events:none}
+.why-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:32px}
+.why-card{background:rgba(255,255,255,.03);border:1px solid var(--bdr2);border-radius:10px;padding:22px 20px;display:flex;gap:16px;align-items:flex-start;transition:border-color var(--T),transform var(--T)}
+.why-card:hover{border-color:var(--border);transform:translateY(-3px)}
+.why-ico{width:46px;height:46px;border-radius:6px;background:rgba(232,124,30,.1);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.why-ico svg{width:22px;height:22px;fill:var(--or)}
+.why-title{font-family:'Oswald',sans-serif;font-size:14.5px;font-weight:600;color:var(--white);margin-bottom:7px;letter-spacing:.04em}
+.why-desc{font-size:12.5px;color:var(--muted);line-height:1.7}
+
+/* BLOG */
+.blog-sec{background:var(--blk2)}
+.blog-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:32px}
+.blog-card{background:rgba(255,255,255,.03);border:1px solid var(--bdr2);border-radius:10px;overflow:hidden;transition:border-color var(--T),transform var(--T)}
+.blog-card:hover{border-color:var(--border);transform:translateY(-5px)}
+.blog-img-wrap{height:190px;overflow:hidden;background:var(--blk3)}
+.blog-img-wrap img{width:100%;height:100%;object-fit:cover;filter:sepia(.12);transition:transform .5s,filter .4s}
+.blog-card:hover .blog-img-wrap img{transform:scale(1.05);filter:sepia(0)}
+.blog-body{padding:20px}
+.blog-cat{font-family:'Oswald',sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:9px}
+.blog-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:8px;line-height:1.25}
+.blog-exc{font-size:12.5px;color:var(--muted);line-height:1.7;margin-bottom:14px}
+.blog-read{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--or);display:inline-flex;align-items:center;gap:6px}
+.blog-read svg{width:12px;height:12px;fill:var(--or);transition:transform .2s}
+.blog-card:hover .blog-read svg{transform:translateX(4px)}
+
+/* TESTIMONIALS */
+.rev-sec{background:var(--blk);overflow:hidden;position:relative}
+.rev-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(232,124,30,.07) 0%,transparent 60%);pointer-events:none}
+.rev-hd{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;position:relative;z-index:1}
+.rev-viewport{overflow:hidden;border-radius:var(--r);margin-top:30px;position:relative;z-index:1}
+.rev-track{display:flex;gap:14px;transition:transform .62s cubic-bezier(.4,0,.2,1)}
+.rev-card{flex:0 0 100%;background:rgba(255,255,255,.04);border:1px solid var(--bdr2);border-radius:10px;padding:24px 22px;position:relative}
+.rev-card.ft{border-color:rgba(232,124,30,.4);background:rgba(232,124,30,.06)}
+.rev-stars{display:flex;gap:2px;margin-bottom:12px}
+.rev-stars svg{width:13px;height:13px;fill:var(--or)}
+.rev-stars svg.half{fill:url(#star-half)}
+.rev-q{font-size:13.5px;line-height:1.8;color:rgba(255,255,255,.75);margin-bottom:18px;padding-left:22px;position:relative}
+.rev-q::before{content:'\201C';font-size:54px;color:var(--or);opacity:.22;position:absolute;top:-10px;left:-4px;font-family:'Playfair Display',serif;line-height:1}
+.rev-foot{display:flex;align-items:center;gap:12px;border-top:1px solid var(--bdr2);padding-top:14px}
+.rev-av{width:42px;height:42px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--or),var(--or3));display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-size:16px;font-weight:700;color:#000}
+.rev-name{font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;color:var(--white)}
+.rev-loc{font-size:10.5px;color:var(--muted);margin-top:2px;display:flex;align-items:center;gap:4px}
+.rev-loc svg{width:10px;height:10px;fill:var(--muted)}
+.ctrl{width:38px;height:38px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--white);font-size:15px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .22s}
+.ctrl:hover{background:var(--or);color:#000;border-color:var(--or)}
+.ctrl svg{width:14px;height:14px;fill:currentColor}
+.rev-dots{display:flex;justify-content:center;gap:7px;margin-top:20px;position:relative;z-index:1}
+.rdot{width:7px;height:7px;border-radius:50%;background:#222;cursor:pointer;transition:all .3s}
+.rdot.on{width:26px;border-radius:4px;background:var(--or)}
+
+/* TEAM */
+.team-sec{background:var(--blk2);text-align:center}
+.team-scroll-wrap{overflow:hidden;margin-top:32px}
+.team-scroller{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.team-scroller::-webkit-scrollbar{display:none}
+.team-card{flex:0 0 240px;scroll-snap-align:start;background:rgba(255,255,255,.03);border:1px solid var(--bdr2);border-radius:10px;overflow:hidden;text-align:left;transition:border-color var(--T)}
+.team-card:hover{border-color:var(--border)}
+.tc-img{height:260px;overflow:hidden;position:relative;background:var(--blk3)}
+.tc-img img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:sepia(.08);transition:transform .5s}
+.team-card:hover .tc-img img{transform:scale(1.06)}
+.tc-img-fade{position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(11,8,5,.9))}
+.tc-info{padding:16px}
+.tc-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white)}
+.tc-role{font-family:'Oswald',sans-serif;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--or);margin-top:3px}
+.tc-bio{font-size:12px;color:var(--muted);line-height:1.65;margin-top:9px}
+
+/* APPOINTMENT */
+.appt-sec{background:linear-gradient(160deg,var(--blk) 0%,var(--blk2) 60%,var(--blk) 100%);position:relative;overflow:hidden}
+.appt-sec::before{content:'';position:absolute;top:-40px;right:-40px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(232,124,30,.11) 0%,transparent 70%);pointer-events:none}
+.appt-inner{position:relative;z-index:1}
+.appt-form{margin-top:30px;display:flex;flex-direction:column;gap:16px}
+.form-row{display:flex;flex-direction:column;gap:16px}
+.form-group{display:flex;flex-direction:column;gap:7px}
+.form-label{font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.form-ctrl{background:rgba(255,255,255,.05);border:1px solid var(--bdr2);border-radius:var(--r);padding:13px 16px;font-size:13.5px;color:var(--white);outline:none;width:100%;transition:border-color .22s}
+.form-ctrl:focus{border-color:var(--or);background:rgba(232,124,30,.04)}
+.form-ctrl option{background:var(--blk);color:var(--white)}
+textarea.form-ctrl{resize:vertical;min-height:100px}
+.appt-btn{width:100%;background:linear-gradient(135deg,var(--or),var(--or2));color:#000;border:none;border-radius:3px;padding:15px;font-family:'Oswald',sans-serif;font-size:15px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 6px 26px rgba(232,124,30,.38);margin-top:6px;display:flex;align-items:center;justify-content:center;gap:10px}
+.appt-btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(232,124,30,.52)}
+.appt-btn svg{width:16px;height:16px;fill:#000}
+
+/* LOCATION */
+.loc-sec{background:var(--blk2)}
+.loc-grid{display:grid;grid-template-columns:1fr;gap:28px;margin-top:32px}
+.loc-items{display:flex;flex-direction:column;gap:20px}
+.loc-item{display:flex;gap:14px;align-items:flex-start}
+.loc-ico{width:42px;height:42px;border-radius:6px;flex-shrink:0;background:rgba(232,124,30,.1);border:1px solid var(--border);display:flex;align-items:center;justify-content:center}
+.loc-ico svg{width:18px;height:18px;fill:var(--or)}
+.loc-lbl{font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--or);margin-bottom:5px}
+.loc-val{font-size:13px;color:var(--muted);line-height:1.7}
+.loc-val a{color:var(--or);font-family:'Oswald',sans-serif;font-weight:600;font-size:16px}
+.hours-wrap{background:rgba(255,255,255,.03);border:1px solid var(--bdr2);border-radius:var(--r);overflow:hidden}
+.hour-row{display:flex;justify-content:space-between;align-items:center;padding:11px 16px;border-bottom:1px solid var(--bdr2);font-size:13px}
+.hour-row:last-child{border-bottom:none}
+.hour-day{color:var(--muted)}
+.hour-time{font-family:'Oswald',sans-serif;font-weight:500;color:var(--or);font-size:13px}
+.map-box{display:flex;flex-direction:column;gap:12px}
+.map-link{width:100%;height:200px;border-radius:var(--r);border:1px solid var(--border);background:var(--blk3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-decoration:none;transition:border-color .22s,background .22s}
+.map-link:hover{border-color:var(--or);background:rgba(232,124,30,.05)}
+.map-ico-wrap{width:56px;height:56px;border-radius:50%;background:rgba(232,124,30,.1);border:1px solid var(--border);display:flex;align-items:center;justify-content:center}
+.map-ico-wrap svg{width:26px;height:26px;fill:var(--or)}
+.map-link .map-text{font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;color:var(--or);letter-spacing:.1em;text-transform:uppercase}
+.map-link .map-sub{font-size:11px;color:var(--muted)}
+
+/* FOOTER */
+footer{background:var(--blk);border-top:1px solid var(--border);padding:50px var(--px) 24px}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-logo{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--white);margin-bottom:10px}
+.footer-desc{font-size:12.5px;color:var(--muted);line-height:1.75;margin-bottom:22px;max-width:280px}
+.footer-cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:32px}
+.footer-col h4{font-family:'Oswald',sans-serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:14px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col a{font-size:12.5px;color:var(--muted);transition:color .2s;display:flex;align-items:center;gap:6px}
+.footer-col a:hover{color:var(--or)}
+.footer-col a svg{width:11px;height:11px;fill:var(--muted)}
+.footer-socials{display:flex;gap:10px;margin-top:18px}
+.social-ico{width:36px;height:36px;border-radius:6px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:border-color .2s,background .2s;text-decoration:none}
+.social-ico:hover{border-color:var(--or);background:rgba(232,124,30,.1)}
+.social-ico svg{width:16px;height:16px;fill:var(--muted)}
+.social-ico:hover svg{fill:var(--or)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:18px;font-size:11px;color:#333;display:flex;flex-direction:column;gap:5px}
+.footer-bottom span{color:var(--or)}
+
+/* RESPONSIVE */
+@media(min-width:600px){:root{--px:30px}.svc-grid{grid-template-columns:1fr 1fr}.pkg-panel{grid-template-columns:1fr 1fr}.why-grid{grid-template-columns:1fr 1fr}.blog-grid{grid-template-columns:1fr 1fr}.form-row{flex-direction:row}.form-row .form-group{flex:1}.loc-grid{grid-template-columns:1fr 1fr}.map-link{height:260px}#ogl-gallery{height:400px}.rev-card{flex:0 0 calc(50% - 7px)}}
+@media(min-width:1024px){:root{--px:58px}nav{padding:16px var(--px)}.ham{display:none}.nav-links{display:flex}.nav-book{display:block}.hero{flex-direction:row;min-height:100svh}.hero-content{flex:1;padding:100px var(--px) 70px;justify-content:center}.hero-img-block{flex:0 0 44%;height:auto}.hero-img-block img{height:100%}.svc-grid{grid-template-columns:repeat(3,1fr)}.pkg-panel{grid-template-columns:1fr 1fr}.why-grid{grid-template-columns:repeat(3,1fr)}.blog-grid{grid-template-columns:repeat(3,1fr)}.rev-card{flex:0 0 calc(33.33% - 10px)}#ogl-gallery{height:460px}.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;align-items:start}.footer-logo,.footer-desc{grid-column:1}.footer-cols{display:contents}.footer-bottom{flex-direction:row;justify-content:space-between}.loc-grid{grid-template-columns:1fr 1fr;gap:44px}}
+@media(min-width:1280px){:root{--px:80px}}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+</style>
+</head>
+<body>
+
+<!-- SVG DEFS (reusable icons) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <defs>
+    <!-- scissors -->
+    <symbol id="i-scissors" viewBox="0 0 24 24"><path d="M9.07 7.44A4.5 4.5 0 1 0 5.5 14c.86 0 1.67-.24 2.36-.66l2.27 2.27-2.27 2.27A4.5 4.5 0 1 0 9.07 19.5c0-.69-.16-1.35-.44-1.94L11 15.19l1.36 1.37-.01.94a4.5 4.5 0 1 0 1.5-3.31L12.5 12l1.35-1.35a4.5 4.5 0 1 0-1.5-3.31l.01.94L11 9.65 8.63 7.27c.28-.59.44-1.25.44-1.94zm-3.57 5.06a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 7.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6zM18 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></symbol>
+    <!-- star -->
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+    <!-- map-pin -->
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></symbol>
+    <!-- phone -->
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></symbol>
+    <!-- clock -->
+    <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></symbol>
+    <!-- location/flag -->
+    <symbol id="i-location" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></symbol>
+    <!-- map -->
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></symbol>
+    <!-- whatsapp -->
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+    <!-- arrow-right -->
+    <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></symbol>
+    <!-- arrow-left -->
+    <symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></symbol>
+    <!-- info -->
+    <symbol id="i-info" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></symbol>
+    <!-- female -->
+    <symbol id="i-female" viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 0 0 10A5 5 0 0 0 12 2zm0 12c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></symbol>
+    <!-- male -->
+    <symbol id="i-male" viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 0 0 10A5 5 0 0 0 12 2zm0 12c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></symbol>
+    <!-- drag hand -->
+    <symbol id="i-drag" viewBox="0 0 24 24"><path d="M11 9h2V7h-2v2zm-2 0V7c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2h1c.55 0 1 .45 1 1v9c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1v-9c0-.55.45-1 1-1h1zm4 0V7h-2v2h2z"/></symbol>
+    <!-- scissors-line (service icons) -->
+    <symbol id="i-cut" viewBox="0 0 24 24"><path d="M9.64 7.64c.23-.5.36-1.05.36-1.64 0-2.21-1.79-4-4-4S2 3.79 2 6s1.79 4 4 4c.59 0 1.14-.13 1.64-.36L10 12l-2.36 2.36C7.14 14.13 6.59 14 6 14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4c0-.59-.13-1.14-.36-1.64L12 14l7 7h3v-1L9.64 7.64zM6 8c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm0 12c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm6-7.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zM19 3l-6 6 2 2 7-7V3h-3z"/></symbol>
+    <!-- face/skin -->
+    <symbol id="i-face" viewBox="0 0 24 24"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 13.93 10 17.12 10c.9 0 1.76-.1 2.59-.29.21.71.29 1.46.29 2.29 0 4.41-3.59 8-8 8z"/></symbol>
+    <!-- palette -->
+    <symbol id="i-colour" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></symbol>
+    <!-- sparkle/keratin -->
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 1L9.5 8.5 2 11l7.5 2.5L12 21l2.5-7.5L22 11l-7.5-2.5L12 1zm0 4.24l1.5 4.5.5.16-.5.16L12 14.5l-1.5-4.44-.5-.16.5-.16L12 5.24z"/></symbol>
+    <!-- wax/nail -->
+    <symbol id="i-beauty" viewBox="0 0 24 24"><path d="M7.5 6.5C7.5 8.43 6.43 10 5 10S2.5 8.43 2.5 6.5 3.57 3 5 3s2.5 1.57 2.5 3.5zM22 9H11v2h4v10h2V11h5V9zM9 12H7v-2H5v2H3v2h2v5h2v-5h2v-2z"/></symbol>
+    <!-- bride -->
+    <symbol id="i-bride" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm6-3.5V9h-1.5V7.5H15V9h-1.5v1.5H15V12h1.5v-1.5H18v-1.5h-1.5z"/></symbol>
+    <!-- award/quality -->
+    <symbol id="i-award" viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94C8.02 14.5 9.48 15.86 11 16.4V19H8v2h8v-2h-3v-2.6c1.52-.54 2.98-1.9 3.61-3.46C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></symbol>
+    <!-- leaf/nature -->
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 4-8 4z"/></symbol>
+    <!-- shield/hygiene -->
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></symbol>
+    <!-- tag/price -->
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></symbol>
+    <!-- people/unisex -->
+    <symbol id="i-people" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></symbol>
+    <!-- timer/on-time -->
+    <symbol id="i-timer" viewBox="0 0 24 24"><path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42C16.07 4.74 14.12 4 12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></symbol>
+    <!-- instagram -->
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
+    <!-- facebook -->
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></symbol>
+  </defs>
+</svg>
+
+<!-- WHATSAPP FAB -->
+<a class="wa-fab" href="https://wa.me/917033142912?text=Hi%20The%20Grooming%20Zone!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg>
+</a>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-logo">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 24 24"><use href="#i-scissors"/></svg>
+    </div>
+    <div class="nav-logo-text">
+      <div class="name">The Grooming Zone</div>
+      <div class="sub">Unisex Salon · Mango, Jamshedpur</div>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Packages</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#team">Stylists</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-book">
+    <a href="#appointment"><button class="nav-book-btn">Book Now</button></a>
+  </div>
+  <button class="ham" id="hamBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- MOBILE NAV -->
+<nav class="mob-nav" id="mobNav">
+  <a href="#services" onclick="closeNav()">Services</a>
+  <a href="#pricing" onclick="closeNav()">Packages</a>
+  <a href="#gallery" onclick="closeNav()">Gallery</a>
+  <a href="#team" onclick="closeNav()">Stylists</a>
+  <a href="#reviews" onclick="closeNav()">Reviews</a>
+  <a href="#contact" onclick="closeNav()">Contact</a>
+  <a href="#appointment" onclick="closeNav()" class="mob-book">Book Appointment</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+  <div class="hero-content">
+    <div class="hero-tag"><span class="pulse"></span>Mango · Jamshedpur · Jharkhand</div>
+    <h1 class="hero-title">
+      Slick<br/>&amp; <em>Style</em>
+      <span class="sub-line">Unisex Salon</span>
+    </h1>
+    <p class="hero-desc">Jamshedpur's premium grooming destination. Expert cuts, colour, keratin, bridal makeup &amp; more — for every man, woman &amp; child in Mango.</p>
+    <div class="hero-btns">
+      <a href="#appointment"><button class="btn-or"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-scissors"/></svg>Book Appointment</button></a>
+      <a href="#pricing"><button class="btn-ghost"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-tag"/></svg>View Packages</button></a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="n">500+</div><div class="l">Happy Clients</div></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><div class="n">10+</div><div class="l">Expert Stylists</div></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><div class="n">4.8★</div><div class="l">Google Rating</div></div>
+    </div>
+  </div>
+  <div class="hero-img-block">
+    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1000&q=87&auto=format&fit=crop" alt="The Grooming Zone Salon" loading="eager"/>
+    <div class="hero-img-grad"></div>
+    <div class="hero-img-badge"><svg viewBox="0 0 24 24" width="12" height="12"><use href="#i-pin"/></svg>Shop 18, Niranjan Singh Market, Mango</div>
+    <div class="hero-img-float">
+      <span class="big">4.8★</span>
+      <span class="sm">Google Reviews</span>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Haircuts</span><span class="marquee-item">Global Colour</span><span class="marquee-item">Keratin Treatment</span><span class="marquee-item">Smoothening</span><span class="marquee-item">D-Tan Package</span><span class="marquee-item">Bridal Makeup</span><span class="marquee-item">Facial &amp; Skin</span><span class="marquee-item">Beard Grooming</span><span class="marquee-item">Waxing &amp; Threading</span><span class="marquee-item">Botox Treatment</span><span class="marquee-item">Rebonding</span><span class="marquee-item">Straightening</span>
+    <span class="marquee-item">Haircuts</span><span class="marquee-item">Global Colour</span><span class="marquee-item">Keratin Treatment</span><span class="marquee-item">Smoothening</span><span class="marquee-item">D-Tan Package</span><span class="marquee-item">Bridal Makeup</span><span class="marquee-item">Facial &amp; Skin</span><span class="marquee-item">Beard Grooming</span><span class="marquee-item">Waxing &amp; Threading</span><span class="marquee-item">Botox Treatment</span><span class="marquee-item">Rebonding</span><span class="marquee-item">Straightening</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="svc-sec sec" id="services">
+  <div class="si">
+    <div class="sl">Expert Grooming</div>
+    <h2 class="sh">Our <span class="or">Services</span></h2>
+    <div class="divider"></div>
+    <div class="svc-note rv">
+      <svg viewBox="0 0 24 24"><use href="#i-info"/></svg>
+      All services use premium Loreal Professional, Matrix &amp; Wella products. Walk-in or book your appointment via WhatsApp at <strong style="color:var(--or)">+91 70331 42912</strong>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card rv">
+        <div>
+          <div class="svc-icon-wrap"><svg viewBox="0 0 24 24"><use href="#i-cut"/></svg></div>
+          <div class="svc-n">Haircuts &amp; Blow Dry</div>
+          <div class="svc-d">Precision cuts, blow-dries &amp; styling for men, women and kids by certified stylists.</div>
+        </div>
+        <div class="svc-p"><span class="was">₹877</span><span class="now">₹349</span></div>
+      </div>
+      <div class="svc-card rv d1">
+        <div>
+          <div class="svc-icon-wrap"><svg viewBox="0 0 24 24"><use href="#i-colour"/></svg></div>
+          <div class="svc-n">Hair Colour &amp; Highlights</div>
+          <div class="svc-d">Global colour, highlights, balayage &amp; fashion shades using Loreal &amp; Matrix pro ranges.</div>
+        </div>
+        <div class="svc-p"><span class="from">Starting from</span><span class="now">₹1999</span></div>
+      </div>
+      <div class="svc-card rv d2">
+        <div>
+          <div class="svc-icon-wrap"><svg viewBox="0 0 24 24"><use href="#i-sparkle"/></svg></div>
+          <div class="svc-n">Keratin &amp; Smoothening</div>
+          <div class="svc-d">Long-lasting frizz-free keratin, rebonding, smoothening &amp; straightening at the best prices.</div>
+        </div>
+        <div class="svc-p"><span class="was">₹4499</span><span class="now">₹2999</span></div>
+      </div>
+      <div class="svc-card rv">
+        <div>
+          <div class="svc-icon-wrap"><svg viewBox="0 0 24 24"><use href="#i-face"/></svg></div>
+          <div class="svc-n">Facials &amp; Skin Treatments</div>
+          <div class="svc-d">Deep-cleanse facials, D-Tan, Glow &amp; advanced skin treatments for radiant, healthy skin.</div>
+        </div>
+        <div class="svc-p"><span class="from">Starting from</span><span class="now">₹499</span></div>
+      </div>
+      <div class="svc-card rv d1">
+        <div>
+          <div class="svc-icon-wrap"><svg viewBox="0 0 24 24"><use href="#i-beauty"/></svg></div>
+          <div class="svc-n">Waxing &amp; Hair Removal</div>
+          <div class="svc-d">Full body waxing, threading &amp; eyebrow shaping with hygienic professional techniques.</div>
+        </div>
+        <div class="svc-p"><span class="from">Starting from</span><span class="now">₹199</span></div>
+      </div>
+      <div class="svc-card rv d2">
+        <div>
+          <div class="svc-icon-wrap"><svg viewBox="0 0 24 24"><use href="#i-bride"/></svg></div>
+          <div class="svc-n">Bridal &amp; Party Makeup</div>
+          <div class="svc-d">Stunning bridal packages with pre-bridal treatments. Look your absolute best on your big day.</div>
+        </div>
+        <div class="svc-p"><span class="from">Starting from</span><span class="now">₹2999</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="pkg-sec sec" id="pricing">
+  <div class="si">
+    <div class="sl">Exclusive Deals</div>
+    <h2 class="sh">Grooming <span class="or">Packages</span></h2>
+    <div class="divider"></div>
+    <div class="pkg-notice rv">
+      <svg viewBox="0 0 24 24"><use href="#i-info"/></svg>
+      <span>These deals can be <strong style="color:var(--or)">bought only at store</strong> · Shop 18, Niranjan Singh Market Complex, Dimna Road, Opp. Hira Hotel, Mango, Jamshedpur</span>
+    </div>
+    <div class="pkg-tabs">
+      <button class="ptab active" onclick="switchTab('hair',this)">Hair Packages</button>
+      <button class="ptab" onclick="switchTab('ny2026',this)">New Year 2026</button>
+    </div>
+
+    <div class="pkg-panel show" id="pkg-hair">
+      <div class="pkg-card hot rv">
+        <div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-female"/></svg>Female</div><div class="pkg-name">Hair Cut + D-Tan Package</div><div class="pkg-tag">Complete care combo</div></div>
+        <div class="pkg-pr"><span class="pkg-was">₹1326</span><div class="pkg-now">₹799</div><div class="pkg-off">Save 39%</div></div>
+      </div>
+      <div class="pkg-card hot rv d1">
+        <div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-male"/></svg>Male</div><div class="pkg-name">Hair Cut + D-Tan Package</div><div class="pkg-tag">Complete care combo</div></div>
+        <div class="pkg-pr"><span class="pkg-was">₹1146</span><div class="pkg-now">₹699</div><div class="pkg-off">Save 39%</div></div>
+      </div>
+      <div class="pkg-card rv">
+        <div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-female"/></svg>Female</div><div class="pkg-name">Hair Cut Package</div><div class="pkg-tag">Quick style refresh</div></div>
+        <div class="pkg-pr"><span class="pkg-was">₹877</span><div class="pkg-now">₹349</div><div class="pkg-off">Save 60%</div></div>
+      </div>
+      <div class="pkg-card rv d1">
+        <div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-male"/></svg>Male</div><div class="pkg-name">Hair Cut Package</div><div class="pkg-tag">Quick style refresh</div></div>
+        <div class="pkg-pr"><span class="pkg-was">₹846</span><div class="pkg-now">₹299</div><div class="pkg-off">Save 64%</div></div>
+      </div>
+    </div>
+
+    <div class="pkg-panel" id="pkg-ny2026">
+      <div class="pkg-card hot rv"><div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-female"/></svg>Female</div><div class="pkg-name">BOTOX Treatment</div><div class="pkg-tag">Advanced hair restoration</div></div><div class="pkg-pr"><span class="pkg-was">₹5499</span><div class="pkg-now">₹2999</div><div class="pkg-off">Save 45%</div></div></div>
+      <div class="pkg-card rv d1"><div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-female"/></svg>Female</div><div class="pkg-name">Glow Package</div><div class="pkg-tag">Radiant skin treatment</div></div><div class="pkg-pr"><span class="pkg-was">₹2105</span><div class="pkg-now">₹1699</div><div class="pkg-off">Save 19%</div></div></div>
+      <div class="pkg-card rv"><div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-female"/></svg>Female</div><div class="pkg-name">Luxury – Global Colour</div><div class="pkg-tag">Full colour transformation</div></div><div class="pkg-pr"><span class="pkg-was">₹2499</span><div class="pkg-now">₹1999</div><div class="pkg-off">Save 20%</div></div></div>
+      <div class="pkg-card rv d1"><div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-female"/></svg>Female</div><div class="pkg-name">Luxury – Keratin</div><div class="pkg-tag">Frizz-free smooth hair</div></div><div class="pkg-pr"><span class="pkg-was">₹4499</span><div class="pkg-now">₹3999</div><div class="pkg-off">Save 11%</div></div></div>
+      <div class="pkg-card rv"><div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-female"/></svg>Female</div><div class="pkg-name">Luxury – Rebonding</div><div class="pkg-tag">Permanently straight hair</div></div><div class="pkg-pr"><span class="pkg-was">₹3999</span><div class="pkg-now">₹2999</div><div class="pkg-off">Save 25%</div></div></div>
+      <div class="pkg-card rv d1"><div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-female"/></svg>Female</div><div class="pkg-name">Luxury – Smoothening</div><div class="pkg-tag">Silky smooth results</div></div><div class="pkg-pr"><span class="pkg-was">₹3999</span><div class="pkg-now">₹2999</div><div class="pkg-off">Save 25%</div></div></div>
+      <div class="pkg-card rv"><div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-female"/></svg>Female</div><div class="pkg-name">Luxury – Straightening</div><div class="pkg-tag">Long-lasting straight style</div></div><div class="pkg-pr"><span class="pkg-was">₹3999</span><div class="pkg-now">₹2999</div><div class="pkg-off">Save 25%</div></div></div>
+      <div class="pkg-card rv d1"><div><div class="pkg-badge"><svg viewBox="0 0 24 24" width="9" height="9"><use href="#i-female"/></svg>Female</div><div class="pkg-name">Shine Package</div><div class="pkg-tag">Mirror-shine hair therapy</div></div><div class="pkg-pr"><span class="pkg-was">₹3946</span><div class="pkg-now">₹2999</div><div class="pkg-off">Save 24%</div></div></div>
+    </div>
+
+    <div class="rv" style="text-align:center;margin-top:32px">
+      <a href="#appointment"><button class="btn-or" style="font-size:13px;padding:14px 30px"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-scissors"/></svg>Book Any Package Now</button></a>
+      <p style="font-size:11px;color:var(--muted);margin-top:10px">Call us: <a href="tel:+917033142912" style="color:var(--or);font-weight:600">+91 70331 42912</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY - OGL Circular -->
+<section class="gal-sec sec" id="gallery">
+  <div class="si">
+    <div class="gal-hd">
+      <div class="sl" style="justify-content:center">Transformation Gallery</div>
+      <h2 class="sh">Before &amp; <span class="or">After</span></h2>
+      <p style="font-size:13px;color:var(--muted);margin-top:10px">Drag or scroll to explore real transformations from our Jamshedpur salon</p>
+    </div>
+    <div id="ogl-gallery"></div>
+    <div class="gal-hint">
+      <svg viewBox="0 0 24 24"><use href="#i-drag"/></svg>
+      Drag or scroll to explore
+    </div>
+    <!-- Fallback grid (shown if WebGL fails) -->
+    <div class="gal-grid-fallback" id="galFallback" style="display:none;margin-top:24px">
+      <div class="gi tall"><img class="fix-tall" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=85&auto=format&fit=crop" alt="Haircut transformation" loading="lazy"/><div class="gi-label">Before → After</div></div>
+      <div class="gi"><img class="fix-sm" src="https://images.unsplash.com/photo-1560869713-7d0e29f16a14?w=500&q=85&auto=format&fit=crop" alt="Hair colour" loading="lazy"/><div class="gi-label">Colour</div></div>
+      <div class="gi"><img class="fix-sm" src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=500&q=85&auto=format&fit=crop" alt="Men grooming" loading="lazy"/><div class="gi-label">Men's Grooming</div></div>
+      <div class="gi"><img class="fix-sm" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&q=85&auto=format&fit=crop" alt="Bridal" loading="lazy"/><div class="gi-label">Bridal Makeup</div></div>
+      <div class="gi"><img class="fix-sm" src="https://images.unsplash.com/photo-1633681122467-c47e8bc12c4b?w=500&q=85&auto=format&fit=crop" alt="Keratin" loading="lazy"/><div class="gi-label">Keratin</div></div>
+      <div class="gi tall"><img class="fix-tall" src="https://images.unsplash.com/photo-1487412947147-5cebf100680f?w=600&q=85&auto=format&fit=crop" alt="Skin treatment" loading="lazy"/><div class="gi-label">Skin Treatment</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog-sec sec">
+  <div class="si">
+    <div class="sl">Grooming Insights</div>
+    <h2 class="sh">Recent <span class="or">Blog Posts</span></h2>
+    <div class="divider"></div>
+    <div class="blog-grid">
+      <div class="blog-card rv">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80&auto=format&fit=crop" alt="Top haircuts 2025" loading="lazy"/>
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat">Haircuts · 2025</div>
+          <div class="blog-title">Top Haircuts for 2025</div>
+          <p class="blog-exc">From textured crops to precision fades — our experts pick the best styles for every face shape, age and personality this year.</p>
+          <div class="blog-read">Read More <svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg></div>
+        </div>
+      </div>
+      <div class="blog-card rv d1">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1633681122467-c47e8bc12c4b?w=600&q=80&auto=format&fit=crop" alt="Keratin vs smoothening" loading="lazy"/>
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat">Hair Care · Treatment</div>
+          <div class="blog-title">Keratin vs Smoothening — What's Right for You?</div>
+          <p class="blog-exc">Frizzy hair in Jharkhand's humid climate? Our experts break down the key differences to help you choose the right treatment.</p>
+          <div class="blog-read">Read More <svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg></div>
+        </div>
+      </div>
+      <div class="blog-card rv d2">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100680f?w=600&q=80&auto=format&fit=crop" alt="Bridal makeup tips" loading="lazy"/>
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat">Bridal · Makeup</div>
+          <div class="blog-title">Bridal Makeup Tips for Jamshedpur Brides</div>
+          <p class="blog-exc">Our senior makeup artists share insider tips to keep you picture-perfect through the entire ceremony and reception in Jamshedpur.</p>
+          <div class="blog-read">Read More <svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="rev-sec sec" id="reviews">
+  <div class="si">
+    <div class="rev-hd">
+      <div>
+        <div class="sl">Client Feedback</div>
+        <h2 class="sh">What Our <span class="or">Clients Say</span></h2>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="ctrl" id="rPrev"><svg viewBox="0 0 24 24"><use href="#i-arrow-l"/></svg></button>
+        <button class="ctrl" id="rNext"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg></button>
+      </div>
+    </div>
+    <div class="rev-viewport">
+      <div class="rev-track" id="rTrack">
+        <div class="rev-card ft">
+          <div class="rev-stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div>
+          <p class="rev-q">Best salon in Mango! Got keratin done and the results are absolutely stunning. The stylist really understood my hair type. Highly recommend to everyone in Jamshedpur!</p>
+          <div class="rev-foot"><div class="rev-av">P</div><div><div class="rev-name">Priya Sharma</div><div class="rev-loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg>Mango, Jamshedpur</div></div></div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div>
+          <p class="rev-q">Went for the haircut package with my husband — both of us absolutely loved it! Very clean and professional. The D-Tan combo is totally worth every rupee.</p>
+          <div class="rev-foot"><div class="rev-av">S</div><div><div class="rev-name">Sunita Devi</div><div class="rev-loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg>Dimna Road, Jamshedpur</div></div></div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div>
+          <p class="rev-q">Got my beard trimmed and a facial done here. The team is super professional and friendly. Best grooming experience I've had in Jamshedpur!</p>
+          <div class="rev-foot"><div class="rev-av">R</div><div><div class="rev-name">Rohit Kumar</div><div class="rev-loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg>Adityapur, Jamshedpur</div></div></div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div>
+          <p class="rev-q">Amazing smoothening treatment! My hair feels silky and looks so healthy. The Loreal products they use are top class. Got the New Year package at a great discount!</p>
+          <div class="rev-foot"><div class="rev-av">A</div><div><div class="rev-name">Anjali Gupta</div><div class="rev-loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg>Sakchi, Jamshedpur</div></div></div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div>
+          <p class="rev-q">My bridal makeup was done here and it was absolutely perfect. Got so many compliments on my wedding day. The pre-bridal package is a must-do!</p>
+          <div class="rev-foot"><div class="rev-av">N</div><div><div class="rev-name">Neha Singh</div><div class="rev-loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg>Mango, Jamshedpur</div></div></div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div>
+          <p class="rev-q">Lovely experience. The hair colour came out exactly as I showed them. Friendly staff and great prices. The salon is clean and well maintained. 10/10!</p>
+          <div class="rev-foot"><div class="rev-av">K</div><div><div class="rev-name">Kavita Mishra</div><div class="rev-loc"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg>Telco, Jamshedpur</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="rev-dots" id="rDots"></div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-sec sec" id="why">
+  <div class="si">
+    <div class="sl">Why The Grooming Zone</div>
+    <h2 class="sh">Jamshedpur's <span class="or">Finest</span> Salon</h2>
+    <div class="divider"></div>
+    <div class="why-grid">
+      <div class="why-card rv"><div class="why-ico"><svg viewBox="0 0 24 24"><use href="#i-award"/></svg></div><div><div class="why-title">Expert Certified Stylists</div><p class="why-desc">Certified in latest techniques, trained with Loreal, Matrix &amp; Wella. Every stylist brings precision and passion to your look.</p></div></div>
+      <div class="why-card rv d1"><div class="why-ico"><svg viewBox="0 0 24 24"><use href="#i-leaf"/></svg></div><div><div class="why-title">Premium Branded Products</div><p class="why-desc">We exclusively use Loreal Professional, Matrix &amp; Wella for treatments that last longer, look better and protect your hair.</p></div></div>
+      <div class="why-card rv d2"><div class="why-ico"><svg viewBox="0 0 24 24"><use href="#i-shield"/></svg></div><div><div class="why-title">100% Hygienic Standards</div><p class="why-desc">Sterilised tools, fresh towels for every client and salon-grade cleanliness that you can see &amp; feel. Your safety is our priority.</p></div></div>
+      <div class="why-card rv"><div class="why-ico"><svg viewBox="0 0 24 24"><use href="#i-tag"/></svg></div><div><div class="why-title">Best Prices in Jamshedpur</div><p class="why-desc">Premium salon experience without the premium price tag. Packages offer up to 65% off, available exclusively at our Mango store.</p></div></div>
+      <div class="why-card rv d1"><div class="why-ico"><svg viewBox="0 0 24 24"><use href="#i-people"/></svg></div><div><div class="why-title">Truly Unisex Salon</div><p class="why-desc">Services for men, women, kids &amp; teens — the entire family covered under one roof in the heart of Mango, Jamshedpur.</p></div></div>
+      <div class="why-card rv d2"><div class="why-ico"><svg viewBox="0 0 24 24"><use href="#i-timer"/></svg></div><div><div class="why-title">On-Time, Every Time</div><p class="why-desc">Book an appointment and we'll be ready for you. No long waits, no rush — focused quality service dedicated entirely to you.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-sec sec" id="team">
+  <div class="si">
+    <div class="sl" style="justify-content:center">Meet Our Stylists</div>
+    <h2 class="sh" style="text-align:center">Expert <span class="or">Hands</span></h2>
+    <div class="divider" style="margin:14px auto 30px"></div>
+    <div class="team-scroll-wrap">
+      <div class="team-scroller" id="teamScroll">
+        <div class="team-card">
+          <div class="tc-img"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=85&auto=format&fit=crop&crop=top" alt="Riya Jaiswal" loading="lazy"/><div class="tc-img-fade"></div></div>
+          <div class="tc-info"><div class="tc-name">Riya Jaiswal</div><div class="tc-role">Master Hair Stylist</div><p class="tc-bio">8+ years in keratin, balayage &amp; bridal hair. Loreal certified &amp; trained in Mumbai's top academies.</p></div>
+        </div>
+        <div class="team-card">
+          <div class="tc-img"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=85&auto=format&fit=crop&crop=top" alt="Amit Sharma" loading="lazy"/><div class="tc-img-fade"></div></div>
+          <div class="tc-info"><div class="tc-name">Amit Sharma</div><div class="tc-role">Men's Grooming Specialist</div><p class="tc-bio">Expert in precision fades, beard sculpting &amp; modern cuts. 6 years transforming men's looks in Jamshedpur.</p></div>
+        </div>
+        <div class="team-card">
+          <div class="tc-img"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=85&auto=format&fit=crop&crop=top" alt="Sunita Das" loading="lazy"/><div class="tc-img-fade"></div></div>
+          <div class="tc-info"><div class="tc-name">Sunita Das</div><div class="tc-role">Skin &amp; Makeup Artist</div><p class="tc-bio">Facial specialist &amp; certified makeup artist with 7 years in bridal &amp; advanced skin treatments.</p></div>
+        </div>
+        <div class="team-card">
+          <div class="tc-img"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=85&auto=format&fit=crop&crop=top" alt="Rahul Singh" loading="lazy"/><div class="tc-img-fade"></div></div>
+          <div class="tc-info"><div class="tc-name">Rahul Singh</div><div class="tc-role">Colour Technician</div><p class="tc-bio">Passionate about colour transformations. Specialises in global colour, highlights, balayage &amp; fashion shades.</p></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:10px;margin-top:20px">
+      <button class="ctrl" id="tPrev"><svg viewBox="0 0 24 24"><use href="#i-arrow-l"/></svg></button>
+      <button class="ctrl" id="tNext"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section class="appt-sec sec" id="appointment">
+  <div class="si appt-inner">
+    <div class="sl">Online Booking</div>
+    <h2 class="sh">Book Your <span class="or">Appointment</span></h2>
+    <div class="divider"></div>
+    <p style="font-size:13.5px;color:var(--muted);line-height:1.75;margin-bottom:4px">Same-day slots available! Fill the form or WhatsApp us at <a href="tel:+917033142912" style="color:var(--or);font-weight:600">+91 70331 42912</a></p>
+    <form class="appt-form" onsubmit="handleBook(event)">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Full Name</label><input class="form-ctrl" type="text" placeholder="Your full name" required/></div>
+        <div class="form-group"><label class="form-label">Phone Number</label><input class="form-ctrl" type="tel" placeholder="+91 XXXXX XXXXX" required/></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Service</label>
+          <select class="form-ctrl" required>
+            <option value="" disabled selected>Select service</option>
+            <optgroup label="Hair Services">
+              <option>Haircut – Female (₹349)</option><option>Haircut – Male (₹299)</option>
+              <option>Hair Cut + D-Tan – Female (₹799)</option><option>Hair Cut + D-Tan – Male (₹699)</option>
+              <option>Keratin Treatment (₹3999)</option><option>Smoothening / Rebonding (₹2999)</option>
+              <option>Straightening (₹2999)</option><option>Global Colour (₹1999)</option>
+              <option>BOTOX Treatment (₹2999)</option><option>Shine Package (₹2999)</option><option>Glow Package (₹1699)</option>
+            </optgroup>
+            <optgroup label="Skin &amp; Beauty">
+              <option>Facial / Clean-Up (₹499+)</option><option>D-Tan Treatment</option>
+              <option>Waxing / Threading</option><option>Bridal Makeup Package</option><option>Party Makeup</option>
+            </optgroup>
+            <optgroup label="Men's Grooming">
+              <option>Beard Trim &amp; Styling</option><option>Facial for Men</option><option>Full Grooming Package</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label">Preferred Date &amp; Time</label><input class="form-ctrl" type="datetime-local" required/></div>
+      </div>
+      <div class="form-group"><label class="form-label">Special Notes (Optional)</label><textarea class="form-ctrl" placeholder="Any special requirements, allergies or requests..."></textarea></div>
+      <button type="submit" class="appt-btn"><svg viewBox="0 0 24 24" width="16" height="16"><use href="#i-scissors"/></svg>Book My Appointment via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="loc-sec sec" id="contact">
+  <div class="si">
+    <div class="sl">Find Us</div>
+    <h2 class="sh">Location &amp; <span class="or">Contact</span></h2>
+    <div class="divider"></div>
+    <div class="loc-grid">
+      <div class="loc-items">
+        <div class="loc-item rv">
+          <div class="loc-ico"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg></div>
+          <div><div class="loc-lbl">Address</div><div class="loc-val">Shop No. 18, Niranjan Singh Market Complex<br/>Dimna Road, Opposite Hira Hotel<br/>Mango, Jamshedpur – 831001<br/>Jharkhand, India</div></div>
+        </div>
+        <div class="loc-item rv d1">
+          <div class="loc-ico"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg></div>
+          <div><div class="loc-lbl">Phone / WhatsApp</div><div class="loc-val"><a href="tel:+917033142912">+91 70331 42912</a></div></div>
+        </div>
+        <div class="loc-item rv d2">
+          <div class="loc-ico"><svg viewBox="0 0 24 24"><use href="#i-location"/></svg></div>
+          <div><div class="loc-lbl">Nearby Landmarks</div><div class="loc-val">Opposite Hira Hotel · Dimna Road<br/>Niranjan Singh Market Complex<br/>Near Mango Chowk, Jamshedpur</div></div>
+        </div>
+        <div class="hours-wrap rv">
+          <div class="hour-row"><span class="hour-day">Monday – Friday</span><span class="hour-time">9:00 AM – 9:00 PM</span></div>
+          <div class="hour-row"><span class="hour-day">Saturday</span><span class="hour-time">8:30 AM – 9:30 PM</span></div>
+          <div class="hour-row"><span class="hour-day">Sunday</span><span class="hour-time">9:00 AM – 8:00 PM</span></div>
+        </div>
+      </div>
+      <div class="map-box rv">
+        <a href="https://maps.app.goo.gl/Mrhx7FYJLJHERWeR7" target="_blank" rel="noopener" class="map-link">
+          <div class="map-ico-wrap"><svg viewBox="0 0 24 24"><use href="#i-map"/></svg></div>
+          <div class="map-text">Open in Google Maps</div>
+          <div class="map-sub">The Grooming Zone · Mango, Jamshedpur</div>
+        </a>
+        <a href="https://wa.me/917033142912?text=Hi!%20I%27d%20like%20to%20book%20at%20The%20Grooming%20Zone." target="_blank" rel="noopener">
+          <button class="btn-or" style="width:100%;justify-content:center;font-size:13px;padding:13px"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-whatsapp"/></svg>Book via WhatsApp</button>
+        </a>
+        <a href="tel:+917033142912">
+          <button class="btn-ghost" style="width:100%;justify-content:center;font-size:13px;padding:12px"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-phone"/></svg>Call: +91 70331 42912</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">The <span class="or">Grooming</span> Zone</div>
+      <p class="footer-desc">Jamshedpur's premium unisex salon in Mango. Expert haircuts, colour, keratin, bridal makeup &amp; more — for every man, woman &amp; child.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-ico" title="Instagram"><svg viewBox="0 0 24 24"><use href="#i-instagram"/></svg></a>
+        <a href="https://wa.me/917033142912" class="social-ico" title="WhatsApp" target="_blank"><svg viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg></a>
+        <a href="#" class="social-ico" title="Facebook"><svg viewBox="0 0 24 24"><use href="#i-facebook"/></svg></a>
+        <a href="tel:+917033142912" class="social-ico" title="Call"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Haircuts &amp; Styling</a></li>
+          <li><a href="#services"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Hair Treatments</a></li>
+          <li><a href="#services"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Colour &amp; Highlights</a></li>
+          <li><a href="#services"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Facials &amp; D-Tan</a></li>
+          <li><a href="#services"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Waxing &amp; Threading</a></li>
+          <li><a href="#services"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Bridal Makeup</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#pricing"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Packages &amp; Pricing</a></li>
+          <li><a href="#gallery"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Gallery</a></li>
+          <li><a href="#team"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Our Stylists</a></li>
+          <li><a href="#reviews"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Reviews</a></li>
+          <li><a href="#appointment"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Book Appointment</a></li>
+          <li><a href="#contact"><svg viewBox="0 0 24 24"><use href="#i-arrow-r"/></svg>Contact &amp; Map</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="tel:+917033142912"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg>+91 70331 42912</a></li>
+          <li><a href="https://wa.me/917033142912"><svg viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg>WhatsApp Us</a></li>
+          <li><a href="#contact"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg>Mango, Jamshedpur</a></li>
+          <li><a href="#contact"><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg>Mon–Sun: 9AM–9PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 <span>The Grooming Zone</span>. All rights reserved · Mango, Jamshedpur</p>
+      <p>Crafted for Jamshedpur</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── Hamburger ── */
+const hamBtn=document.getElementById('hamBtn'),mobNav=document.getElementById('mobNav');
+hamBtn.addEventListener('click',()=>{const o=mobNav.classList.toggle('open');hamBtn.classList.toggle('open',o);document.body.style.overflow=o?'hidden':''});
+function closeNav(){mobNav.classList.remove('open');hamBtn.classList.remove('open');document.body.style.overflow=''}
+
+/* ── Nav scroll shrink ── */
+window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('scrolled',scrollY>60)},{passive:true});
+
+/* ── Pricing tabs ── */
+function switchTab(id,btn){
+  document.querySelectorAll('.pkg-panel').forEach(p=>p.classList.remove('show'));
+  document.getElementById('pkg-'+id).classList.add('show');
+  document.querySelectorAll('.ptab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+/* ── Reviews carousel ── */
+(function(){
+  const track=document.getElementById('rTrack'),dotsW=document.getElementById('rDots');
+  const prev=document.getElementById('rPrev'),next=document.getElementById('rNext');
+  if(!track)return;
+  const cards=[...track.querySelectorAll('.rev-card')];
+  const N=cards.length;
+  let cur=0,cpv=1,auto;
+  function cpvNow(){return innerWidth>=1024?3:innerWidth>=600?2:1}
+  function maxI(){return Math.max(0,N-cpv)}
+  function buildDots(){dotsW.innerHTML='';const pg=Math.ceil(N/cpv);for(let i=0;i<pg;i++){const d=document.createElement('div');d.className='rdot'+(i===0?' on':'');d.addEventListener('click',()=>go(i*cpv));dotsW.appendChild(d)}}
+  function go(idx){
+    cur=Math.max(0,Math.min(idx,maxI()));
+    const w=cards[0].offsetWidth+14;
+    track.style.transform=`translateX(-${cur*w}px)`;
+    dotsW.querySelectorAll('.rdot').forEach((d,i)=>d.classList.toggle('on',i===Math.floor(cur/cpv)));
+  }
+  function autoP(){clearInterval(auto);auto=setInterval(()=>go(cur>=maxI()?0:cur+1),5200)}
+  next.addEventListener('click',()=>{go(cur+1);autoP()});
+  prev.addEventListener('click',()=>{go(cur-1);autoP()});
+  let sx=0;
+  track.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
+  track.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>40){go(d<0?cur+1:cur-1);autoP()}},{passive:true});
+  window.addEventListener('resize',()=>{cpv=cpvNow();cur=0;buildDots();go(0)},{passive:true});
+  cpv=cpvNow();buildDots();go(0);autoP();
+})();
+
+/* ── Team scroll ── */
+document.getElementById('tPrev').addEventListener('click',()=>document.getElementById('teamScroll').scrollBy({left:-260,behavior:'smooth'}));
+document.getElementById('tNext').addEventListener('click',()=>document.getElementById('teamScroll').scrollBy({left:260,behavior:'smooth'}));
+
+/* ── Appointment form ── */
+function handleBook(e){
+  e.preventDefault();
+  const f=e.target;
+  const n=f.querySelector('input[type="text"]').value;
+  const p=f.querySelector('input[type="tel"]').value;
+  const s=f.querySelector('select').value;
+  const dt=f.querySelector('input[type="datetime-local"]').value;
+  const msg=`Hi The Grooming Zone!%0A%0AI'd like to book an appointment.%0A%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AService: ${encodeURIComponent(s)}%0ADate/Time: ${encodeURIComponent(dt)}`;
+  window.open(`https://wa.me/917033142912?text=${msg}`,'_blank');
+}
+
+/* ── Scroll Reveal ── */
+(function(){
+  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+})();
+
+/* ══════════════════════════════════════════════════
+   OGL CIRCULAR GALLERY
+══════════════════════════════════════════════════ */
+(function initGallery(){
+  const container = document.getElementById('ogl-gallery');
+  if(!container) return;
+
+  // Check WebGL support
+  const testCanvas = document.createElement('canvas');
+  const gl = testCanvas.getContext('webgl') || testCanvas.getContext('experimental-webgl');
+  if(!gl){
+    container.style.display='none';
+    document.getElementById('galFallback').style.display='grid';
+    return;
+  }
+
+  const galleryItems = [
+    { image:'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&q=85&auto=format&fit=crop', text:'Haircut Transformation' },
+    { image:'https://images.unsplash.com/photo-1560869713-7d0e29f16a14?w=800&q=85&auto=format&fit=crop', text:'Colour & Highlights' },
+    { image:'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=85&auto=format&fit=crop', text:"Men's Grooming" },
+    { image:'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=85&auto=format&fit=crop', text:'Bridal Makeup' },
+    { image:'https://images.unsplash.com/photo-1633681122467-c47e8bc12c4b?w=800&q=85&auto=format&fit=crop', text:'Keratin Treatment' },
+    { image:'https://images.unsplash.com/photo-1487412947147-5cebf100680f?w=800&q=85&auto=format&fit=crop', text:'Skin Glow Facial' },
+    { image:'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&q=85&auto=format&fit=crop', text:'Smoothening' },
+    { image:'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=85&auto=format&fit=crop', text:'Salon Experience' },
+  ];
+
+  if(!window.OGL){
+    container.style.display='none';
+    document.getElementById('galFallback').style.display='grid';
+    return;
+  }
+
+  const { Renderer, Camera, Transform, Plane, Mesh, Program, Texture } = window.OGL;
+
+  function debounce(fn,wait){let t;return function(...a){clearTimeout(t);t=setTimeout(()=>fn.apply(this,a),wait)}}
+  function lerp(a,b,t){return a+(b-a)*t}
+
+  const renderer = new Renderer({alpha:true,antialias:true,dpr:Math.min(devicePixelRatio||1,2)});
+  const glCtx = renderer.gl;
+  glCtx.clearColor(0,0,0,0);
+  container.appendChild(glCtx.canvas);
+
+  const camera = new Camera(glCtx);
+  camera.fov=45; camera.position.z=20;
+  const scene = new Transform();
+  const geo = new Plane(glCtx,{heightSegments:50,widthSegments:100});
+
+  let screen={width:container.clientWidth,height:container.clientHeight};
+  let viewport={width:0,height:0};
+  function updateViewport(){
+    screen={width:container.clientWidth,height:container.clientHeight};
+    renderer.setSize(screen.width,screen.height);
+    camera.perspective({aspect:screen.width/screen.height});
+    const fov=(camera.fov*Math.PI)/180;
+    const h=2*Math.tan(fov/2)*camera.position.z;
+    viewport={width:h*camera.aspect,height:h};
+  }
+  updateViewport();
+
+  const ITEMS=galleryItems.concat(galleryItems);
+  const PADDING=2;
+  const BEND=1.2;
+  const TEXT_COLOR='#e87c1e';
+
+  class SlideItem {
+    constructor(data,index){
+      this.index=index;
+      this.extra=0;
+      this.speed=0;
+      const tex=new Texture(glCtx,{generateMipmaps:true});
+      this.prog=new Program(glCtx,{
+        depthTest:false,depthWrite:false,transparent:true,
+        vertex:`precision highp float;attribute vec3 position;attribute vec2 uv;uniform mat4 modelViewMatrix;uniform mat4 projectionMatrix;uniform float uTime;uniform float uSpeed;varying vec2 vUv;void main(){vUv=uv;vec3 p=position;p.z=(sin(p.x*4.0+uTime)*1.5+cos(p.y*2.0+uTime)*1.5)*(0.05+uSpeed*0.3);gl_Position=projectionMatrix*modelViewMatrix*vec4(p,1.0);}`,
+        fragment:`precision highp float;uniform vec2 uImageSizes;uniform vec2 uPlaneSizes;uniform sampler2D tMap;varying vec2 vUv;float rSDF(vec2 p,vec2 b,float r){vec2 d=abs(p)-b;return length(max(d,vec2(0.0)))+min(max(d.x,d.y),0.0)-r;}void main(){vec2 ratio=vec2(min((uPlaneSizes.x/uPlaneSizes.y)/(uImageSizes.x/uImageSizes.y),1.0),min((uPlaneSizes.y/uPlaneSizes.x)/(uImageSizes.y/uImageSizes.x),1.0));vec2 uv=vec2(vUv.x*ratio.x+(1.0-ratio.x)*0.5,vUv.y*ratio.y+(1.0-ratio.y)*0.5);vec4 col=texture2D(tMap,uv);float d=rSDF(vUv-0.5,vec2(0.5-0.06),0.06);float a=1.0-smoothstep(-0.002,0.002,d);gl_FragColor=vec4(col.rgb,a*col.a);}`,
+        uniforms:{tMap:{value:tex},uPlaneSizes:{value:[0,0]},uImageSizes:{value:[0,0]},uSpeed:{value:0},uTime:{value:Math.random()*100},uBorderRadius:{value:0.06}},
+      });
+      const img=new Image(); img.crossOrigin='anonymous'; img.src=data.image;
+      img.onload=()=>{tex.image=img;this.prog.uniforms.uImageSizes.value=[img.naturalWidth,img.naturalHeight]};
+      this.plane=new Mesh(glCtx,{geometry:geo,program:this.prog});
+      this.plane.setParent(scene);
+      this.resize();
+      // Label canvas
+      const lc=document.createElement('canvas'),lctx=lc.getContext('2d');
+      lctx.font='bold 28px Oswald,sans-serif'; const tw=Math.ceil(lctx.measureText(data.text).width);
+      lc.width=tw+24;lc.height=48; lctx.font='bold 28px Oswald,sans-serif'; lctx.fillStyle=TEXT_COLOR; lctx.textBaseline='middle'; lctx.textAlign='center'; lctx.clearRect(0,0,lc.width,lc.height); lctx.fillText(data.text,lc.width/2,lc.height/2);
+      const ltex=new Texture(glCtx,{generateMipmaps:false}); ltex.image=lc;
+      const lp=new Program(glCtx,{transparent:true,vertex:`attribute vec3 position;attribute vec2 uv;uniform mat4 modelViewMatrix;uniform mat4 projectionMatrix;varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,fragment:`precision highp float;uniform sampler2D tMap;varying vec2 vUv;void main(){vec4 c=texture2D(tMap,vUv);if(c.a<0.1)discard;gl_FragColor=c;}`,uniforms:{tMap:{value:ltex}}});
+      const lm=new Mesh(glCtx,{geometry:new Plane(glCtx),program:lp});
+      const aspect=lc.width/lc.height;
+      const th=this.plane.scale.y*0.14, tw2=th*aspect;
+      lm.scale.set(tw2,th,1); lm.position.y=-this.plane.scale.y*0.5-th*0.5-0.05;
+      lm.setParent(this.plane);
+    }
+    resize(){
+      const s=screen.height/1500;
+      this.plane.scale.y=(viewport.height*(900*s))/screen.height;
+      this.plane.scale.x=(viewport.width*(700*s))/screen.width;
+      this.prog.uniforms.uPlaneSizes.value=[this.plane.scale.x,this.plane.scale.y];
+      this.width=this.plane.scale.x+PADDING;
+      this.widthTotal=this.width*ITEMS.length;
+      this.x=this.width*this.index;
+    }
+    update(scroll,dir){
+      this.plane.position.x=this.x-scroll.current-this.extra;
+      const x=this.plane.position.x, H=viewport.width/2;
+      const B=BEND, R=(H*H+B*B)/(2*B);
+      const ex=Math.min(Math.abs(x),H);
+      const arc=R-Math.sqrt(R*R-ex*ex);
+      this.plane.position.y=-arc;
+      this.plane.rotation.z=-Math.sign(x)*Math.asin(ex/R);
+      this.prog.uniforms.uTime.value+=0.04;
+      this.prog.uniforms.uSpeed.value=scroll.current-scroll.last;
+      const po=this.plane.scale.x/2, vo=viewport.width/2;
+      const before=this.plane.position.x+po<-vo;
+      const after=this.plane.position.x-po>vo;
+      if(dir==='right'&&before){this.extra-=this.widthTotal}
+      if(dir==='left'&&after){this.extra+=this.widthTotal}
+    }
+  }
+
+  const scroll={ease:0.06,current:0,target:0,last:0};
+  const slides=ITEMS.map((d,i)=>new SlideItem(d,i));
+
+  function onWheel(e){scroll.target+=((e.deltaY||e.wheelDelta||e.detail)>0?2:-2)*0.2}
+  let isDown=false,startX=0,startScroll=0;
+  function onDown(e){isDown=true;startX=e.touches?e.touches[0].clientX:e.clientX;startScroll=scroll.current}
+  function onMove(e){if(!isDown)return;const x=e.touches?e.touches[0].clientX:e.clientX;scroll.target=startScroll+(startX-x)*0.04}
+  function onUp(){isDown=false}
+  window.addEventListener('wheel',onWheel,{passive:true});
+  container.addEventListener('mousedown',onDown);
+  window.addEventListener('mousemove',onMove);
+  window.addEventListener('mouseup',onUp);
+  container.addEventListener('touchstart',onDown,{passive:true});
+  window.addEventListener('touchmove',onMove,{passive:true});
+  window.addEventListener('touchend',onUp);
+
+  const onResize=debounce(()=>{updateViewport();slides.forEach(s=>s.resize())},200);
+  window.addEventListener('resize',onResize);
+
+  function raf(){
+    scroll.current=lerp(scroll.current,scroll.target,scroll.ease);
+    const dir=scroll.current>scroll.last?'right':'left';
+    slides.forEach(s=>s.update(scroll,dir));
+    renderer.render({scene,camera});
+    scroll.last=scroll.current;
+    requestAnimationFrame(raf);
+  }
+  raf();
+})();
+
+/* ══════════════════════════════════════════════════
+   ELECTRIC BORDER on service & package cards (canvas)
+══════════════════════════════════════════════════ */
+(function initElectric(){
+  const ORANGE='rgba(232,124,30,';
+  function noiseVal(x){return(Math.sin(x*12.9898)*43758.5453)%1}
+  function n2d(x,y){
+    const i=Math.floor(x),j=Math.floor(y),fx=x-i,fy=y-j;
+    const a=noiseVal(i+j*57),b=noiseVal(i+1+j*57),c=noiseVal(i+(j+1)*57),d=noiseVal(i+1+(j+1)*57);
+    const ux=fx*fx*(3-2*fx),uy=fy*fy*(3-2*fy);
+    return a*(1-ux)*(1-uy)+b*ux*(1-uy)+c*(1-ux)*uy+d*ux*uy;
+  }
+  function octNoise(x,time,seed){
+    let y=0,amp=0.09,freq=8;
+    for(let i=0;i<6;i++){y+=amp*n2d(freq*x+seed*100,time*freq*0.25);freq*=1.6;amp*=0.65}
+    return y;
+  }
+  function getRRPt(t,l,tp,w,h,r){
+    const sw=w-2*r,sh=h-2*r,ca=(Math.PI*r)/2;
+    const perim=2*sw+2*sh+4*ca;
+    let dist=t*perim,acc=0;
+    if(dist<=acc+sw){const p=(dist-acc)/sw;return{x:l+r+p*sw,y:tp}}acc+=sw;
+    if(dist<=acc+ca){const p=(dist-acc)/ca;const a=-Math.PI/2+p*Math.PI/2;return{x:l+w-r+Math.cos(a)*r,y:tp+r+Math.sin(a)*r}}acc+=ca;
+    if(dist<=acc+sh){const p=(dist-acc)/sh;return{x:l+w,y:tp+r+p*sh}}acc+=sh;
+    if(dist<=acc+ca){const p=(dist-acc)/ca;const a=p*Math.PI/2;return{x:l+w-r+Math.cos(a)*r,y:tp+h-r+Math.sin(a)*r}}acc+=ca;
+    if(dist<=acc+sw){const p=(dist-acc)/sw;return{x:l+w-r-p*sw,y:tp+h}}acc+=sw;
+    if(dist<=acc+ca){const p=(dist-acc)/ca;const a=Math.PI/2+p*Math.PI/2;return{x:l+r+Math.cos(a)*r,y:tp+h-r+Math.sin(a)*r}}acc+=ca;
+    if(dist<=acc+sh){const p=(dist-acc)/sh;return{x:l,y:tp+h-r-p*sh}}acc+=sh;
+    const p=(dist-acc)/ca;const a=Math.PI+p*Math.PI/2;return{x:l+r+Math.cos(a)*r,y:tp+r+Math.sin(a)*r};
+  }
+
+  function attachElectric(el,color='rgba(232,124,30,0.9)',speed=0.4){
+    const canvas=document.createElement('canvas');
+    canvas.style.cssText='position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;border-radius:inherit';
+    el.style.position='relative';
+    el.insertBefore(canvas,el.firstChild);
+    const ctx=canvas.getContext('2d');
+    let time=0,last=0,running=false,raf=null;
+    const OFF=24,dpr=Math.min(devicePixelRatio||1,2);
+    function resize(){
+      const rect=el.getBoundingClientRect();
+      canvas.width=(rect.width+OFF*2)*dpr;
+      canvas.height=(rect.height+OFF*2)*dpr;
+      canvas.style.width=`${rect.width+OFF*2}px`;
+      canvas.style.height=`${rect.height+OFF*2}px`;
+    }
+    resize();
+    const ro=new ResizeObserver(resize); ro.observe(el);
+    function draw(ts){
+      time+=(ts-last)*0.001*speed; last=ts;
+      const W=canvas.width/dpr,H=canvas.height/dpr;
+      ctx.setTransform(1,0,0,1,0,0); ctx.clearRect(0,0,canvas.width,canvas.height); ctx.scale(dpr,dpr);
+      const l=OFF,t=OFF,w=W-OFF*2,h=H-OFF*2,r=10;
+      const disp=18,samples=Math.floor(2*(w+h)/3);
+      ctx.strokeStyle=color; ctx.lineWidth=1.2; ctx.lineCap='round'; ctx.lineJoin='round';
+      ctx.shadowBlur=8; ctx.shadowColor=color;
+      ctx.beginPath();
+      for(let i=0;i<=samples;i++){
+        const progress=i/samples;
+        const pt=getRRPt(progress,l,t,w,h,r);
+        const dx=octNoise(progress*6,time,0)*disp;
+        const dy=octNoise(progress*6,time,1)*disp;
+        i===0?ctx.moveTo(pt.x+dx,pt.y+dy):ctx.lineTo(pt.x+dx,pt.y+dy);
+      }
+      ctx.closePath(); ctx.stroke();
+      if(running) raf=requestAnimationFrame(draw);
+    }
+    function start(ts){last=ts;running=true;raf=requestAnimationFrame(draw)}
+    function stop(){running=false;if(raf)cancelAnimationFrame(raf)}
+    el.addEventListener('mouseenter',()=>{if(!running)requestAnimationFrame(start)});
+    el.addEventListener('mouseleave',()=>{stop();const W=canvas.width/dpr,H=canvas.height/dpr;ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,canvas.width,canvas.height)});
+  }
+
+  // Attach to service cards
+  document.querySelectorAll('.svc-card').forEach(el=>attachElectric(el));
+  // Attach to package cards
+  document.querySelectorAll('.pkg-card').forEach(el=>attachElectric(el,'rgba(232,124,30,0.7)',0.3));
+  // Attach to why cards
+  document.querySelectorAll('.why-card').forEach(el=>attachElectric(el,'rgba(232,124,30,0.5)',0.2));
+})();
+</script>
+</body>
+</html>
